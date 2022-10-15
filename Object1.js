@@ -133,3 +133,46 @@ console.log(res);
 let res2 = Object.keys(Obj2);
 let res3 = Object.values(Obj2);
 console.log(res3);
+
+
+//=----------------------------------------------
+let obj = {
+  name: "teenu",
+  id: 9,
+  city: "del",
+};
+//address 1
+
+//copy of a object
+
+//let obj2 = obj;
+
+let obj2 = Object.assign({}, obj); //obj2 new address2
+
+obj.name = "syed";
+
+console.log(obj2, obj);
+
+//-------------------------------------------- Entries
+{
+let obj = {
+  name: "teenu",
+  id: 9,
+  city: "del",
+};
+
+//[teenu , 9,del]
+
+//convert a object into an array
+
+//[[name,teenu] ,[id,9] ,[city,del]]
+let res2 = Object.entries(obj);
+
+// let res =[];
+
+// for(let i in obj){
+//   res.push([i,obj[i]]);
+// }
+
+console.log(res2);
+}
